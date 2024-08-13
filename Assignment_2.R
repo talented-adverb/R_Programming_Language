@@ -12,5 +12,5 @@ conditional_p<-function(p_c_given_r,p_r,p_c){
 p_c<-0.4
 p_r<-0.2
 p_c_given_r<-0.85
-p_r_given_c<-condtional_p(p_c_given_r,p_r,p_c)
+p_r_given_c<-conditional_p(p_c_given_r,p_r,p_c)
 p_r_given_c
