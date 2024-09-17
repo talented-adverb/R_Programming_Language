@@ -1,0 +1,9 @@
+#Q1
+dbinom(7,12,1/6)+dbinom(8,12,1/6)+dbinom(9,12,1/6)
+pbinom(9,12,1/6)-pbinom(6,12,1/6)
+#Q2
+pnorm(84,mean=72,sd=15.2,lower.tail=FALSE)
+#Q3
+dpois(0,5)
+dpois(48,50)+dpois(49,50)+dpois(50,50)
+ppois(50,50)-ppois(47,50)
