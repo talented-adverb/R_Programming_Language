@@ -1,0 +1,47 @@
+#Q1
+x<-c(0,1,2,3,4)
+px<-c(0.41,0.37,0.16,0.05,0.01)
+s<-sum(x*px)
+s2<-weighted.mean(x,px)
+print(s)
+print(s2)
+#Q2
+f<-function(t){
+  0.1*exp(-0.1*t)
+}
+i<-integrate(f,lower=0,upper=Inf)
+print(i)
+#Q3
+x<-c(0,1,2,3)
+px<-c(0.1,0.2,0.2,0.5)
+y<-10*x-12
+e<-sum(y*px)
+print(e)
+#Q4
+f<-function(x){
+  x*0.5*exp(-abs(x))
+}
+i<-integrate(f,1,10)
+print(i)
+f2<-function(x){
+  x^2*0.5*exp(-abs(x))
+}
+i2<-integrate(f2,1,10)
+print(i2)
+var=(i2$value)-((i$value)^2)
+print(paste("Mean:",i$value))
+print(paste("var:",var))
+print(paste("sd:",var^0.5))
+#Q5
+f<-function(y){
+  (3/4)*(1/4)^(sqrt(y)-1)
+}
+x<-c(1,2,3,4,5)
+y<-x^2
+py<-f(y)
+print(f(9))
+e1<-sum(y*py)
+e2<-sum((y^2)*py)
+var<-e2-e1^2
+print(paste("Mean:",e1))
+print(paste("Variance:",var))

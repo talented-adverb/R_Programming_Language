@@ -7,3 +7,11 @@ pnorm(84,mean=72,sd=15.2,lower.tail=FALSE)
 dpois(0,5)
 dpois(48,50)+dpois(49,50)+dpois(50,50)
 ppois(50,50)-ppois(47,50)
+#Q4
+dhyper(3,17,250-17,5)
+#Q5
+x<-0:31
+y1<-dbinom(x,31,0.447)
+plot(x,y1)
+y2<-pbinom(x,31,0.447)
+plot(x,y2)
